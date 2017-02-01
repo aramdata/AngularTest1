@@ -1,0 +1,41 @@
+<!--<ul class="list-group">
+    <li *ngFor="let news of News" class="list-group-item">
+        <span class="badge">{{news.count}}</span> {{news.titr}}
+    </li>
+</ul>-->
+
+
+			<div class="widget">
+				<div class="widget-controls">
+					<span class="close-content"><i class="fa fa-trash-o"></i></span>
+					<span class="expand-content"><i class="fa fa-expand"></i></span>
+					<span class="refresh-content"><i class="fa fa-refresh"></i></span>
+				</div>
+				<div class="task-managment">
+					<div class="widget-title">
+						<h3>{{blockTitle}}</h3>
+                        <button class="btn btn-success" (click)="blockTitle='clear'">آخرین اخبار</button>
+                        <input type="text" value={{blockTitle}} (input)="blockTitle= $event.target.value">
+                        <input type="text" [(ngModel)]="blockTitle">
+                        
+                        <span>Preview : {{blockTitle}}</span>
+						<span>15 Tasks is pending..</span>
+
+                        <i class="fa fa-star fa-3x" [class.rated]="rated" (click)="RateNews()"></i>
+					</div>
+					<form class="add-task-item ng-pristine ng-valid">
+				        <input name="item" id="task-item" placeholder="Add you Task" type="text"> 
+				       	<div id="itembutton"> <button id="addEventAdder"><i class="fa fa-plus"></i></button></div>
+				    </form>
+					<ol id="listitems">
+						<li *ngFor="let news of News">
+                            <i class="red-skin"></i>
+                           <span class="badge">{{news.count}}</span> {{news.titr}}
+                            <span class="fa fa-close"></span>
+                            </li>
+					</ol>
+				</div><!-- Task Management -->
+
+			</div>
+
+	

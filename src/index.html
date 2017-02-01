@@ -5,10 +5,231 @@
   <title>Test1</title>
   <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <link href="./resources/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link href="./resources/css/main.css" rel="stylesheet">
+    <link href="./resources/css/admin.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./resources/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-  <app-root>Loading...</app-root>
+  <div class="top-bar ng-scope">
+    <div class="logo">
+        <a href="#/" title=""><i class="fa fa-deviantart"></i> Electric</a>
+         <div class="menu-options"><span class="menu-action"><i></i></span></div>
+    </div>
+    <form class="search-form ng-pristine ng-valid">
+        <input placeholder="Search Here..." type="text">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <ul>
+        <li><a title=""><i class="fa fa-plus"></i>New Tasks</a></li>
+        <li><a title=""><i class="fa fa-cloud-upload"></i>Upload Files</a></li>
+    </ul>
+    <div class="quick-links">
+        <ul>
+            <li><a title="" class="sky-skin"><i class="fa fa-info"></i></a>
+                <div class="dialouge notification" style="display: none;">
+                    <span>You have 6 New Notification</span>
+                    <a title="" href="/"><img alt="" src="images/resource/notification1.jpg">Server 3 is Over Loader Pleas
+                    toe Check. <p><i class="fa fa-clock-o"></i>3:45pm</p></a>
+                    <a title="" href="/"><img alt="" src="images/resource/notification2.jpg">Server 10 is Over Loader Pleas
+                    toe Check. <p><i class="fa fa-clock-o"></i>1:40am</p></a>
+                    <a title="" href="/"><img alt="" src="images/resource/notification3.jpg">New User Registered Please Check This <p><i class="fa fa-clock-o"></i>4 Hours ago</p></a>
+                    <a class="view-all" href="#">VIEW ALL NOTIFICATIONS</a>
+                </div>
+            </li>
+            <li><a title="" class="purple-skin"><i class="fa fa-comment-o"></i></a>
+                <div class="dialouge notification" style="display: none;">
+                    <span>You have 3 New Messages</span>
+                    <a title="" href="/">Hey! How are You Diana. I waiting for you.
+                    toe Check. <p><i class="fa fa-clock-o"></i>3:45pm</p></a>
+                    <a title="" href="/">Please Can you Submit A file. I am From Korea
+                    toe Check. <p><i class="fa fa-clock-o"></i>1:40am</p></a>
+                    <a title="" href="/">Hey Today is Party So you Will Have to Come <p><i class="fa fa-clock-o"></i>4 Hours ago</p></a>
+                    <a class="view-all" href="inbox.html">VIEW ALL MESSAGE</a>
+                </div>
+            </li>
+            <li><a title="" class="show-stats red-skin"><i class="fa fa-cog"></i></a></li>
+            <li><a title="" id="toolFullScreen" class="pink-skin"><i class="fa fa-arrows-alt"></i></a></li>
+        </ul>
+    </div>
+</div>
+
+<header class="side-header light-skin opened-menu ng-scope">
+    <div class="admin-details">
+        <span><img src="images/resource/admin.jpg" alt=""></span>
+        <h3>John doe</h3>
+        <i>Web CODER</i>
+        <h5 class="admin-status online">Online</h5>
+    </div>
+    <div class="menu-scroll">
+        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 400px;"><div class="side-menus" style="overflow: hidden; width: auto; height: 400px;">
+            <span>MAIN LINKS</span>
+            <nav>
+                <ul>
+                    <li class="menu-item-has-children">
+                        <a href="" title=""><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
+                        <ul>
+                            <li><a href="#/" title=""><i class="fa fa-circle-o-notch"></i> <span>Dashboard 1</span></a></li>
+                            <li><a href="#/dashboard-2" title=""><i class="fa fa-circle-o-notch"></i> <span>Dashboard 2</span></a></li>
+                            <li><a href="#/dashboard-3" title=""><i class="fa fa-circle-o-notch"></i><span> Dashboard 3</span></a></li>
+                            <li><a href="#/dashboard-4" title=""><i class="fa fa-circle-o-notch"></i> <span>Dashboard 4</span></a></li>
+                            <li><a href="http://themes.webinane.com/electric-admin/horizontal-menu/" title=""><i class="fa fa-circle-o-notch"></i> <span>Dashboard 5</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#/pages/widget" title=""><i class="fa fa-bolt"></i> <span>Widgets</span></a></li>
+                    <li class="menu-item-has-children">
+                        <a href="#" title=""><i class="fa fa-flask"></i> <span>UI Kits</span></a>
+                         <ul>
+                            <li><a href="#/pages/profile" title=""><i class="fa fa-circle-o-notch"></i> <span>Profile</span></a></li>
+                            <li><a href="#/pages/buttons" title=""><i class="fa fa-circle-o-notch"></i> <span>Buttons</span></a></li>
+                            <li><a href="#/pages/hover-masters" title=""><i class="fa fa-circle-o-notch"></i> <span>Hover Masters</span></a></li>
+                            <li><a href="#/pages/setting" title=""><i class="fa fa-circle-o-notch"></i> <span>Profile Setting</span></a></li>
+                            <li><a href="#/pages/popovers" title=""><i class="fa fa-circle-o-notch"></i> <span>Popovers</span></a></li>
+                            <li><a href="#/pages/tooltips" title=""><i class="fa fa-circle-o-notch"></i> <span>Tooltips</span></a></li>
+                            <li><a href="#/pages/image-crop" title=""><i class="fa fa-circle-o-notch"></i> <span>Crop Box</span></a></li>
+                            <li><a href="#/pages/pagination" title=""><i class="fa fa-circle-o-notch"></i> <span>Pagination</span></a></li>
+                            <li><a href="#/pages/collapse" title=""><i class="fa fa-circle-o-notch"></i> <span>Collpase</span></a></li>
+                            <li><a href="#/pages/progress-bar" title=""><i class="fa fa-circle-o-notch"></i> <span>Progress Bar</span></a></li>
+                            <li><a href="#/pages/grids-ribbon" title=""><i class="fa fa-circle-o-notch"></i> <span>Ribbon Grids</span></a></li>
+                            <li><a href="#/pages/scroll-box" title=""><i class="fa fa-circle-o-notch"></i> <span>Scroll Box</span></a></li>
+                            <li><a href="#/pages/static-tables" title=""><i class="fa fa-circle-o-notch"></i> <span>Static Tables</span></a></li>
+                            <li><a href="#/pages/timeline" title=""><i class="fa fa-circle-o-notch"></i> <span>Timeline</span></a></li>
+                            <li><a href="#/pages/range-slider" title=""><i class="fa fa-circle-o-notch"></i> <span>Range Slider</span></a></li>
+                            <li><a href="#/pages/font-awesome-icons" title=""><i class="fa fa-circle-o-notch"></i> <span>Font Awesome Icons</span></a></li>
+                            <li><a href="#/pages/themify-icons" title=""><i class="fa fa-circle-o-notch"></i> <span>Themify Icons</span></a></li>
+                            <li><a href="#/pages/css-spinners" title=""><i class="fa fa-circle-o-notch"></i> <span>Css Spinners</span></a></li>
+                            <li><a href="#/pages/tour" title=""><i class="fa fa-circle-o-notch"></i> <span>Page Tour</span></a></li>
+                            <li><a href="#/pages/price-table" title=""><i class="fa fa-circle-o-notch"></i> <span>Price Table</span></a></li>
+                            <li><a href="#/pages/notification" title=""><i class="fa fa-circle-o-notch"></i> <span>Notification</span></a></li>
+                            <li><a href="#/pages/notification-2" title=""><i class="fa fa-circle-o-notch"></i> <span>Notification 2</span></a></li>
+                            <li><a href="#/pages/search" title=""><i class="fa fa-circle-o-notch"></i> <span>Search</span></a></li>
+                            <li><a href="#/pages/grids" title=""><i class="fa fa-circle-o-notch"></i> <span>Grids</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#" title=""><i class="fa fa-flask"></i> <span>Pages</span></a>
+                         <ul>
+                            <li><a href="#/pages/team" title=""><i class="fa fa-circle-o-notch"></i> <span>Our Team</span></a></li>
+                            <li><a href="#/pages/team-2" title=""><i class="fa fa-circle-o-notch"></i> <span>Our Team 2</span></a></li>
+                            <li><a href="#/pages/portfolio" title=""><i class="fa fa-circle-o-notch"></i> <span>Portfolio </span></a></li>
+                            <li><a href="#/pages/portfolio-2" title=""><i class="fa fa-circle-o-notch"></i> <span>Portfolio 2 </span></a></li>
+                            <li><a href="comming-soon.html" title=""><i class="fa fa-circle-o-notch"></i> <span>Comming Soon</span></a></li>
+                            <li><a href="maintenance.html" title=""><i class="fa fa-circle-o-notch"></i> <span>Maintainance</span></a></li>
+                            <li><a href="#/pages/services" title=""><i class="fa fa-circle-o-notch"></i> <span>Services</span></a></li>
+                            <li><a href="#/pages/services-3" title=""><i class="fa fa-circle-o-notch"></i> <span>Services 3</span></a></li>
+                            <li><a href="#/pages/services-2" title=""><i class="fa fa-circle-o-notch"></i> <span>Services 2</span></a></li>
+                            <li><a href="#/pages/contact" title=""><i class="fa fa-circle-o-notch"></i> <span>Contact Us</span></a></li>
+                            <li><a href="#/pages/blank" title=""><i class="fa fa-circle-o-notch"></i> <span>Blank</span></a></li>
+                            <li><a href="#/pages/gallery-2" title=""><i class="fa fa-circle-o-notch"></i> <span>Gallery 2</span></a></li>
+                            <li><a href="#/pages/gallery" title=""><i class="fa fa-circle-o-notch"></i> <span>Gallery</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a title=""><i class="fa fa-inbox"></i> <span>Emails</span></a>
+                        <ul>
+                            <li><a href="#/pages/inbox" title=""><i class="fa fa-circle-o-notch"></i> <span>Inbox</span></a></li>
+                            <li><a href="#/pages/email/compose" title=""><i class="fa fa-circle-o-notch"></i> <span>Email Compose</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a title=""><i class="fa fa-hdd-o"></i> <span>Forms Elements</span></a>
+                        <ul>
+                            <li><a href="#/pages/form-elements" title=""><i class="fa fa-circle-o-notch"></i> <span>Form Elements</span></a></li>
+                            <li><a href="#/pages/step-forms" title=""><i class="fa fa-circle-o-notch"></i> <span>Step Forms</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#/pages/charts" title=""><i class="fa fa-glass"></i> <span>Charts</span></a></li>
+                    <li class="menu-item-has-children">
+                        <a title=""><i class="fa fa-hdd-o"></i> <span>Maps</span></a>
+                        <ul>
+                            <li><a href="#/pages/vector-map" title=""><i class="fa fa-circle-o-notch"></i> <span>Vector Map</span></a></li>
+                            <li><a href="#/pages/google-map" title=""><i class="fa fa-circle-o-notch"></i> <span>Google Map</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a title=""><i class="fa fa-gift"></i> <span>Extras</span></a>
+                        <ul>
+                            <li><a href="#/pages/505" title=""><i class="fa fa-circle-o-notch"></i> <span>505 Server Error</span></a></li>
+                            <li><a href="#/pages/404" title=""><i class="fa fa-circle-o-notch"></i> <span>404 Error Page</span></a></li>
+                            <li><a href="#/forgot-password" title=""><i class="fa fa-circle-o-notch"></i> <span>Forgot Your Password</span></a></li>
+                            <li><a href="#/pages/faq" title=""><i class="fa fa-circle-o-notch"></i> <span>FAQ's</span></a></li>
+                            <li><a href="#/pages/succesful" title=""><i class="fa fa-circle-o-notch"></i> <span>Succesful</span></a></li>
+                            <li><a href="#/pages/billing" title=""><i class="fa fa-circle-o-notch"></i> <span>Billing</span></a></li>
+                            <li><a href="#/pages/invoice" title=""><i class="fa fa-circle-o-notch"></i> <span>Invoice</span></a></li>
+                            <li><a href="#/register" title=""><i class="fa fa-circle-o-notch"></i> <span>Register Now</span></a></li>
+                            <li><a href="#/login" title=""><i class="fa fa-circle-o-notch"></i> <span>Login</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div><div class="slimScrollBar" style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 2px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 400px;"></div><div class="slimScrollRail" style="width: 2px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+    </div><!-- Menu Scroll -->
+</header>
+
+<div class="main-content ng-scope" data-ng-view=""><div id="progressBar" class="ng-scope" style="width: 100%; opacity: 0;">
+	<div class="loader"></div>
+</div> 
+<div class="breadcrumbs ng-scope">
+	<ul>
+		<li><a href="#/" title="">Home</a></li>
+		<li><a href="#/" title="">Dashboard</a></li>
+	</ul>
+</div>
+
+<div class="heading-sec ng-scope">
+	<div class="row">
+		<div class="col-md-4 column">
+			<div class="heading-profile">
+				<h2>Hi <span>John</span>, Welcome back</h2>
+				<span>Very detailed &amp; featured admin.</span>
+			</div>
+		</div>
+		<div class="col-md-8 column">
+			<div class="top-bar-chart">
+				<div class="quick-report">
+					<div class="quick-report-infos">
+						<p>My Balance</p>
+						<h3>$21,561.21</h3>
+					</div>
+					<span class="bar2" style="display: none;">5,7,4,6,9,10,13,6,5,4,7,6,5,3</span><svg class="peity" height="40px" width="94px"><rect fill="#9797ff" x="0.6714285714285715" y="24.615384615384613" width="5.371428571428572" height="15.384615384615387"></rect><rect fill="#9797ff" x="7.385714285714286" y="18.461538461538463" width="5.37142857142857" height="21.538461538461537"></rect><rect fill="#9797ff" x="14.1" y="27.692307692307693" width="5.371428571428568" height="12.307692307692307"></rect><rect fill="#9797ff" x="20.814285714285717" y="21.538461538461537" width="5.371428571428567" height="18.461538461538463"></rect><rect fill="#9797ff" x="27.52857142857143" y="12.307692307692307" width="5.37142857142857" height="27.692307692307693"></rect><rect fill="#9797ff" x="34.24285714285714" y="9.23076923076923" width="5.371428571428574" height="30.76923076923077"></rect><rect fill="#9797ff" x="40.957142857142856" y="0" width="5.371428571428574" height="40"></rect><rect fill="#9797ff" x="47.67142857142857" y="21.538461538461537" width="5.371428571428574" height="18.461538461538463"></rect><rect fill="#9797ff" x="54.385714285714286" y="24.615384615384613" width="5.371428571428574" height="15.384615384615387"></rect><rect fill="#9797ff" x="61.1" y="27.692307692307693" width="5.371428571428574" height="12.307692307692307"></rect><rect fill="#9797ff" x="67.81428571428572" y="18.461538461538463" width="5.371428571428581" height="21.538461538461537"></rect><rect fill="#9797ff" x="74.52857142857142" y="21.538461538461537" width="5.371428571428581" height="18.461538461538463"></rect><rect fill="#9797ff" x="81.24285714285713" y="24.615384615384613" width="5.371428571428595" height="15.384615384615387"></rect><rect fill="#9797ff" x="87.95714285714284" y="30.769230769230766" width="5.371428571428595" height="9.230769230769234"></rect></svg>
+				</div>
+				<div class="quick-report">
+					<div class="quick-report-infos">
+						<p>New orders</p>
+						<h3>17,561</h3>
+					</div>
+					<span class="bar" style="display: none;">2,3,7,4,6,9,5,4,3,4,6,4,2</span><svg class="peity" height="40px" width="94px"><rect fill="#ff8484" x="0.7230769230769231" y="31.11111111111111" width="5.784615384615385" height="8.88888888888889"></rect><rect fill="#ff8484" x="7.953846153846154" y="26.666666666666668" width="5.784615384615384" height="13.333333333333332"></rect><rect fill="#ff8484" x="15.184615384615386" y="8.88888888888889" width="5.78461538461538" height="31.11111111111111"></rect><rect fill="#ff8484" x="22.415384615384617" y="22.22222222222222" width="5.784615384615378" height="17.77777777777778"></rect><rect fill="#ff8484" x="29.646153846153844" y="13.333333333333336" width="5.784615384615385" height="26.666666666666664"></rect><rect fill="#ff8484" x="36.87692307692308" y="0" width="5.784615384615385" height="40"></rect><rect fill="#ff8484" x="44.107692307692304" y="17.77777777777778" width="5.7846153846153925" height="22.22222222222222"></rect><rect fill="#ff8484" x="51.33846153846154" y="22.22222222222222" width="5.784615384615385" height="17.77777777777778"></rect><rect fill="#ff8484" x="58.56923076923077" y="26.666666666666668" width="5.784615384615378" height="13.333333333333332"></rect><rect fill="#ff8484" x="65.8" y="22.22222222222222" width="5.7846153846153925" height="17.77777777777778"></rect><rect fill="#ff8484" x="73.03076923076922" y="13.333333333333336" width="5.784615384615407" height="26.666666666666664"></rect><rect fill="#ff8484" x="80.26153846153845" y="22.22222222222222" width="5.784615384615407" height="17.77777777777778"></rect><rect fill="#ff8484" x="87.49230769230768" y="31.11111111111111" width="5.784615384615407" height="8.88888888888889"></rect></svg>
+				</div>
+			</div><!-- Top Bar Chart -->
+		</div>
+	</div>
+</div><!-- Top Bar Chart -->
+
+<div class="panel-content ng-scope">
+  <div class="row">
+    <app-news>Loading...</app-news>
+  </div>
+</div><!-- Panel Content -->
+
+</div>
+  <div class="container">
+    <app-root>Loading...</app-root>
+  <div class="col-md-6">
+  <app-news>Loading...</app-news>
+
+  </div>
+  <div class="col-md-6"></div>
+   
+  </div>
 </body>
 </html>
